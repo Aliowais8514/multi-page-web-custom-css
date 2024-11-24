@@ -1,0 +1,360 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f49b;
+  color: #333;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+h1,h2,h3{
+  font-weight: bold;
+
+}
+
+
+/* header styling.. */
+.header{
+  /* background-color: #0070f3; */
+  background-color: #659287;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.header nav{
+  display: flex;
+  gap: 40px;
+  
+}
+
+.header nav a{
+   color: white;
+   font-weight: bold;
+
+}
+
+.header nav  :hover{
+  text-decoration: underline;
+
+}
+
+
+
+/* FOoooter Styleing */
+footer{
+  color: white;
+  background-color: #333;
+ 
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+footer p{
+  margin: 0px;
+
+}
+.footer .icons{
+  margin-right: 20px;
+  font-size: 26px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+ 
+    
+}
+.footer .icons2{
+  margin-left: 10px;
+  border: 2px solid #0070f3;
+  border-radius: 50%;
+}
+.footer .icons:hover{
+  transform: scale(1.1);
+}
+
+
+
+/* Home page style */
+.hero{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: left;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  align-items: center;
+  text-align: center;
+  color: #333;
+  padding-left: 60px;
+  overflow-x: hidden;
+  
+}
+
+.hero h1 {
+  font-size: 52px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+
+
+
+.hero p{
+  font-size: 30px;
+ margin-top: 10px;
+ color: white;
+ text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero button{
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: #0070f3;
+  color: white;
+  font-size: 15px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.hero button:hover{
+  background-color: #005bb5;
+}
+
+/* About styling */
+
+.about{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  
+  
+}
+.about-container{
+  max-width: 500px;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.4);
+  /* background: linear-gradient(rgb(74, 73, 73),rgb(72, 72, 162)); */
+  padding: 30px;
+  border-radius: 10px;
+  margin-left: 20px;
+  letter-spacing: 1px;
+}
+
+.about-container p{
+  padding-top: 20px;
+}
+.about-container .fade-in{
+  color: rgb(232, 123, 45);
+  font-weight: bold;
+  font-style: italic;
+
+  
+}
+.about-container .fade-in:hover{
+  border-bottom: 2px solid chocolate;
+  border-bottom-width: 3px;
+  border-radius: 2px;
+ border-radius: 2px;
+ transition: 0.1s ;
+ 
+}
+
+
+/* Watches styling */
+
+.watches{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+  margin: 50px;
+}
+
+.watch-card{
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.watch-card img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.watch-card h3{
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight:bolder ;
+  
+  
+}
+.watch-card p {
+  color: #555;
+  font-size: 15px;
+}
+.watch-card .price{
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0070f3;
+  
+}
+.watch-card button{
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor:pointer;
+  transition: background-color 0.3s ease;
+}
+
+.watch-card button:hover{
+  background-color: #005bb5;
+}
+.watch-card img {
+   width: 100%;
+   height: auto;
+   border-radius: 10px;
+   transition: transform 0.3s ease;
+}
+.watch-card:hover img{
+ transform: scale(1.1);
+}
+
+/* Contact Form */
+
+.contact-form{
+  /* height: 548px; */
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px 20px;
+  margin-bottom: 180px;
+  background: linear-gradient(to right, rgb(111, 111, 203), rgb(235, 118, 138));
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px  0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button{
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 5px;
+}
+.contact-form button:hover{
+  background-color: #005bb5;
+}
+.contact-form .fade-in{
+   font-weight: bolder;
+   text-align: center;
+   margin-bottom: 5px;
+}
+
+/* fade-in aniamtion */
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in{
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+
+/* REsponsive styling.... */
+@media (max-width: 768px){
+  .header{
+    flex-direction: column;
+    text-align: center;
+  }
+  .header .logo{
+    margin-bottom: 10px;
+  }
+  .header nav{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .hero{
+    height: 70vh;
+    padding: 20px;
+    text-align: center;
+  }
+  .hero h1{
+    font-size: 36px;
+  }
+  .hero p{
+    font-size: 18px;
+  }
+  .hero button{
+     width: 100%;
+     padding: 12px;
+     font-size: 16px;
+  }
+  .watches{
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+  .about{
+    padding: 40px 20px;
+    height: auto;
+  }
+  .about-container{
+   width: 100%;
+   padding: 20px;
+  }
+  .contact-form{
+    margin: 20px;
+    padding: 20px;
+  }
+  
+}
