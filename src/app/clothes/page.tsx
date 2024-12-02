@@ -51,7 +51,7 @@ const tShirtsData = [
   
 
 
-  const watches = () => {
+  const clothes = () => {
     return (
     
         <div className="watches" data-aos="fade-in">
@@ -69,4 +69,4 @@ const tShirtsData = [
     );
   };
   
-  export default watches;
+  export default clothes;
